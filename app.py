@@ -13,7 +13,7 @@ def get_results(user_input, length, num_examples):
     return generator(user_input, max_length=length, num_return_sequences=num_examples)
 
 st.title("**Create your own story with** GPT2 :brain:")
-st.header("Lacking inspiration ? Let the algorithm work for you and write a story all by itself ! All you need is a sentence to start the magic. :green_book:")
+st.header("Lacking inspiration ? Let the algorithm work for you and write a story all by itself ! All you need is a sentence to start the magic. :books:")
 st.write("GPT2 is a NLP model developed by the team of OpenAI - [take a closer look to their work](https://openai.com/blog/better-language-models/).")
 st.write("Choose the length of your story hereunder :")
 
@@ -22,6 +22,8 @@ length = st.slider("Number of words expected", 10, 500, 120, 10)
 st.write("Do you fully trust the algorithm or would you like to have several choices to begin your story ?")
 
 num_examples = st.selectbox("Number of examples", [1, 2, 3, 4, 5], index = 2)
+
+st.write("For better results, your input has to be in English :uk:")
 
 user_input = st.text_input("Start your journey here")
 
