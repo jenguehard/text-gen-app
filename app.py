@@ -23,10 +23,10 @@ st.write("Do you fully trust the algorithm or would you like to have several cho
 
 num_examples = st.selectbox("Number of examples", [1, 2, 3, 4, 5], index = 2)
 
-st.write("For better results, your input has to be in English :uk:")
+st.write("For better results, your input has to be in English 🇬🇧")
 
 user_input = st.text_input("Start your journey here")
-
+1
 if user_input == "":
 
     st.header("Still no idea ? No inspiration ? :confused:")
